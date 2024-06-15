@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Billy Estella">
+    <meta 
+        name="description" 
+        content="Week01 assignment for WDD 131 - Dynamic Web Fundamentals. An About Me page by Billy Estella."
+    >
+    <link rel="stylesheet" href="styles/base.css" />
+    <title>WDD 131 - Dynamic Web Fundamentals - Billy Estella</title>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span id="name">Billy Estella</span></h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/billyestella/">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/26?lang=eng#p10">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>     
+        <section class="card">
+            <h1>About Me</h1>
+            <div id="info-container">
+                <div id="profile-container">
+                    <p>
+                        My name is Billy. I was born in Valenzuela, Philippines. I am currently working as a
+                        customer service representative for a property restoration company based in the US. I 
+                        love playing board games. My favorite is a game that originated in the Philippines named
+                        Game of the Generals. I also love watching anime and reading manga (Japanese comics).
+                        <br><br>
+                        I am married to my wife for more than seven years now. We have a daughter who is turning six 
+                        years old this September. She's a very lively and energetic kid; my wife and I love spending time 
+                        with her.
+                    </p>
+                    <div class="image-container">
+                        <img src="images/profile.JPG" alt="profile picture">
+                    </div>
+                </div>
+                <div id="country-container">
+                    <h2>Philippines</h2>
+                    <div id="country-info-container">
+                        <div id="flag-details-container">
+                            <div class="image-container">
+                                <img src="images/ph-flag.JPG" alt="official flag of The Philippines">
+                            </div>
+                            <span id="flag-caption">Official Flag of the Philippines</span>
+                        </div>
+                        <p>
+                            The Philippines is an archipelagic country in Southeast Asia. It consists of 7,641 islands. 
+                            While the official language is Filipino, based on Tagalog, there are over 170 dialects spoken 
+                            throughout the archipelago. One of the unique features of my country that I like the most is 
+                            that we celebrate Christmas as early as September 1st.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h1>Web Dev Resources</h1>
+            <div id="resources-container">
+                <ul id="resources-list">
+                    <li><a href="https://www.w3schools.com/">W3schools</a></li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://wesbos.com/">Wes Bos</a></li>
+                    <li><a href="https://www.freecodecamp.org/">Freecodecamp</a></li>
+                    <li><a href="https://www.theodinproject.com/">The Odin Project</a></li>
+                    <li><a href="https://htmldog.com/">HTML Dog</a></li>
+                    <li><a href="https://dzone.com/">DZone</a></li>
+                    <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <span>&#169; </span>
+            <span id="currentYear"></span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
