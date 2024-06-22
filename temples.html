@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Billy Estella">
+    <meta name="description" content="Week02 Assignment - Picture Album">
+    <title>Picture Album</title>
+
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <img 
+                width="25" 
+                height="30" 
+                src="https://img.icons8.com/ios/50/FFFFFF/menu--v1.png" 
+                alt="menu--v1"
+                id="menu-icon"
+                onclick="showNavlist()"
+            />
+            <ul id="navlist">
+                <li id="close-icon">
+                    <img 
+                        width="30" 
+                        height="30" 
+                        src="https://img.icons8.com/ios-filled/50/FFFFFF/delete-sign--v1.png" 
+                        alt="delete-sign--v1"
+                        onclick="hideNavlist()"
+                    />
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="album-container">
+            <figure>
+                <img src="images/temples/manila-ph-temple.JPG" alt="manila philippines temple">
+                <figcaption>Manila Philippines Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/cebu-ph-temple.jpg" alt="cebu philippines temple">
+                <figcaption>Cebu Philippines Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/urdaneta-ph-temple.jpg" alt="urdaneta philippines temple">
+                <figcaption>Urdaneta Philippines Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/alabang-ph-temple.jpg" alt="alabang philippines temple">
+                <figcaption>Alabang Philippines Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/davao-ph-temple.jpg" alt="davao philippines temple">
+                <figcaption>Davao Philippines Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/bacolod-ph-temple.jpg" alt="bacolod philippines temple">
+                <figcaption>Bacolod Philippines Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/salt-lake-temple.jpg" alt="salt lake temple">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/madrid-spain-temple.jpg" alt="madrid spain temple">
+                <figcaption>Madrid Spain Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/caracas-venezuela-temple.jpg" alt="caracas venezuela temple">
+                <figcaption>Caracas Venezuela Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>
+            <span>&#169;</span>
+            <span id="currentYear"></span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
