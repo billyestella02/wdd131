@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Billy Estella">
+    <meta name="description" content="Week03 Activity - Favorite Places">
+    <title>Favorite Places</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Japan</h1>
+    </header>
+    <main>
+        <section class="hero-image-container">
+            <picture>
+                <source media="(min-width:768px)" srcset="/images/hero-image-jp-lg.webp" alt="larger image japan">
+                <img id="hero-image" src="/images/hero-image-vert-jp-sm.webp" alt="sample image for japan">
+            </picture>
+        </section>
+        <section id="country-info">
+            <h2>Data</h2>
+            <div class="data-container">
+                <ul class="data-label">
+                    <li>Area:</li>
+                    <li>Population:</li>
+                    <li>Capital:</li>
+                    <li>Languages:</li>
+                    <li>Currency:</li>
+                    <li>Time Zone:</li>
+                    <li>Calling Code:</li>
+                    <li>Internet TLD:</li>
+                </ul>
+                <ul class="data-description">
+                    <li>377,975 sq km</li>
+                    <li>123,970,000</li>
+                    <li>Tokyo</li>
+                    <li>Japanese:</li>
+                    <li>Yen:</li>
+                    <li>UTC+9</li>
+                    <li>+81</li>
+                    <li>.jp</li>
+                </ul>
+            </div>
+        </section>
+        <section id="weather-info">
+            <h2>Weather</h2>
+            <img id="weather-icon" src="/images/weather-icon.svg" alt="weather icon" width="100" height="100">
+            <div class="data-container">
+                <ul class="data-label">
+                    <li>Temperature:</li>
+                    <li>Conditions:</li>
+                    <li>Wind:</li>
+                    <li>Wind Chill:</li>
+                </ul>
+                <ul class="data-description">
+                    <li id="temperature"></li>
+                    <li id="weather"></li>
+                    <li id="wind-speed"></li>
+                    <li id="wind-chill"></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <span>&#169;</span>
+            <span id="currentYear"></span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

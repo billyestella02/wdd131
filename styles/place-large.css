@@ -1,0 +1,51 @@
+@media screen and (min-width: 768px) {
+    #country-info, #weather-info {
+        background-color: #fff;
+        opacity: 0.9;
+        width: 30%;
+        position: absolute;
+    }
+
+    #country-info {
+        top: 20%;
+        left: 2%;
+    }
+
+    #weather-info {
+        bottom: 15%;
+        right: 2%;
+    }
+
+    h2 {
+        text-align: left;
+        background-color: var(--secondary-color);
+        width: 80%;
+        margin: 0.5rem;
+        margin-left: -0.5rem;
+    }
+
+    #weather-info h2 {
+        display: inline-block;
+    }
+
+    #weather-icon {
+        position: absolute;
+        display: inline-block;
+        right: 30%;
+        top: 8%;
+        height: 25%;
+        width: auto;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    #country-info, #weather-info {
+        width: 25%;
+    }
+
+    #weather-info {
+        bottom: 0;
+    }
+}
+
