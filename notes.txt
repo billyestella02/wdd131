@@ -1,0 +1,22 @@
+Web Forms Design Best Practices
+
+1. Clear Title (Label) that describes the purpose of the form 
+2. Never use the word "submit" in the submit button. Think from the user's end. "I want to..."
+3. Only include what is necessary
+4. Clearly identify required fields
+5. Place labels above and left aligned 
+6. Never use multiple columns in the form
+7. Use Radio buttons for less than 5 options. Use Dropdown for more than 5 options
+8. Use single input for the phone number
+9. Use placeholders to avoid confusion. Do not use placeholders to replace labels
+10. Order choices logically
+11. Wrap all inputs in labels
+12. Never add a reset button to the page
+13. Show a confirmation page
+14. Beautiful design makes the user trust the form
+15. Minimum height of 44 px
+16. Group related information
+17. Chunk large forms using fieldsets
+
+Creating the Forms
+1. Input (type, name, user instructions, value, required/not, placeholder)

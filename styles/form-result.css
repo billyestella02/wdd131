@@ -1,0 +1,13 @@
+
+div {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#review-counter {
+    color: #ba5624;
+}
