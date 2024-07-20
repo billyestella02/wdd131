@@ -1,0 +1,47 @@
+#menu-icon {
+    height: 1.4rem;
+    width: 1.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: -4px;
+}
+
+#menu-icon div {
+    width: 1.5rem;
+    height: 0.2rem;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+#menu-icon div::before,
+#menu-icon div::after {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 0.2rem;
+    background: #fff;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+#menu-icon div::before {
+    transform: translateY(-9px);
+}
+
+#menu-icon div::after {
+    transform: translateY(9px);
+}
+
+.open div {
+    background-color: transparent !important;
+}
+
+.open div::before {
+    transform: rotate(-315deg) !important;
+}
+
+.open div::after {
+    transform: rotate(315deg) !important;
+}
