@@ -16,7 +16,7 @@
         padding: 0;
     }
 
-    .slide img {
+    .slide .project-link img {
         width: 600px;
         height: 350px;
     }
