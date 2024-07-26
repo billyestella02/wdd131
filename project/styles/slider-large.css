@@ -1,0 +1,35 @@
+@media screen and (min-width: 768px) {
+    .slide .about {
+        margin-top: -3rem;
+        padding: 2rem;
+    }
+
+    .slide p {
+        line-height: 1.5rem;
+    }
+
+    .slide .project {
+        font-size: 2.5rem;
+    }
+
+    .slide .project-link {
+        padding: 0;
+    }
+
+    .slide img {
+        width: 600px;
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .slide .section-heading {
+        font-size: 3rem;
+    }
+
+    .slide p {
+        font-size: 1.2rem;
+        width: 75%;
+        line-height: 2rem;
+    }
+}

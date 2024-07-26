@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     color: #fff;
 }
 
@@ -9,11 +10,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     font-family: 'Comfortaa', 'Verdana', sans-serif;
     display: grid;
-    grid-template-rows: 10vh 75vh 15vh;
+    grid-template-rows: 10vh 80vh 10vh;
+    gap: 0;
 }
 
 header {
@@ -23,13 +25,18 @@ header {
     padding: 0.5rem;
 }
 
+header .logo {
+    display: block;
+    cursor: pointer;
+}
+
 header h1 {
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-header #name-header {
-    color: #ff4e00;
+.highlight {
+    color: #66c7f4;
 }
 
 header #nav-list {
@@ -44,6 +51,8 @@ header #nav-list {
     align-items: center;
     justify-content: center;
     list-style: none;
+    z-index: 2;
+    background-image: linear-gradient(rgba(87, 100, 144, 0.9), rgba(31, 3, 24, 0.9));
     transition: all 1s ease;
 }
 
@@ -56,27 +65,63 @@ header #nav-list a {
     text-decoration: none;
     padding: 1rem;
     margin: 1rem;
-    background-color: #ff4e00;
+    background-color: #66C7F4;
     border-radius: 15px;
     cursor: pointer;
     outline-offset: 4px;
-    box-shadow: 0 0 0 2px #f5bb00, 0 0.4em 0 0 #ff4e00;
+    box-shadow: 0 0 0 2px 	#1c96c5, 0 0.4em 0 0 #66C7F4;
     transition: all 1s ease;
+    outline: none;
 }
 
 header #nav-list a:hover {
-    background-color: #bf3100;
+    background-color: #576490;
 }
 
+header #nav-list a:focus{
+    border-radius: 15px;
+}
+
+main {
+    height: 75vh;
+    width: 100%;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+    margin:  auto;
+}
+
+.banner h1, .banner p {
+    font-family: 'Cutive Mono', 'Courier', monospace;
+    text-align: center;
+}
+
+.banner h1 {
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+
+.banner p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
 
 
 footer {
     font-size: 0.7rem;
-    position: absolute;
-    bottom: 0;
+    grid-row:  3 / 4;
     text-align: center;
     width: 100%;
     padding: 0.5rem 0;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer .social-media {

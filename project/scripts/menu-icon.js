@@ -7,4 +7,9 @@ menuIcon.addEventListener('click', () => {
     navList.classList.toggle("show-list");
 });
 
-//display and hide nav-list
+
+
+
+
+
+

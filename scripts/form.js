@@ -23,12 +23,4 @@ products.forEach(value => {
 });
 productName.innerHTML = productNameDropdown;
 
-// 
-// // get number of review submissions, how many times submit button is clicked
-// const submitBtn = document.querySelector('#submit-btn');
-// submitBtn.addEventListener('click', () => {
-//     let reviewCounter = localStorage.getItem('numReview') || 0;
-//     reviewCounter++;
-//     localStorage.setItem('numReview', reviewCounter);
-// });
 

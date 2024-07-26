@@ -1,0 +1,76 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.form-container h1 {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+    max-width: 450px;
+}
+
+.contact-form label, 
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+
+.contact-form input[type="text"], 
+.contact-form input[type="email"],
+.contact-form textarea {
+    display: block;
+    background-color: #fff;
+    padding: 0.7rem;
+    appearance: none;
+    outline: none;
+    color: #000;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    font-family: 'Comfortaa', 'Verdana', sans-serif;
+    width: 100%;
+    max-width: 450px;
+}
+
+.contact-form input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#1c96c5, #66C7F4);
+    font-family: 'Comfortaa', 'Verdana', sans-serif;
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 50%;
+    max-width: 400px;
+    display: block;
+    margin: 0.5rem auto;
+    outline-offset: 4px;
+    box-shadow: 0 0 0 2px 	#1c96c5, 0 0.4em 0 0 #66C7F4;
+    cursor: pointer;
+}
+
+.contact-form input[type="text"]:focus:invalid, 
+.contact-form input[type="email"]:focus:invalid,
+.contact-form textarea:focus:invalid {
+    border: 3px solid #cf352e;
+}
+
+.contact-form input[type="text"]:focus:valid, 
+.contact-form input[type="email"]:focus:valid,
+.contact-form textarea:focus:valid {
+    border: 3px solid #39FF14;
+}

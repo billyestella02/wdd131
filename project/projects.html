@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Billy Estella">
+    <meta name="description" content="Final Project - Portfolio Website">
+    <title>Billy Estella - Web Developer</title>
+
+    <link rel="stylesheet" href="./styles/styles-small.css">
+    <link rel="stylesheet" href="./styles/styles-large.css">
+    <link rel="stylesheet" href="./styles/menu-icon.css">
+    <link rel="stylesheet" href="./styles/slider-small.css">
+    <link rel="stylesheet" href="./styles/slider-large.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+    <script src="./scripts/getdates.js" defer></script>
+    <script src="./scripts/menu-icon.js" defer></script>
+    <script src="./scripts/slider.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="siteplan.html" class="logo"><img src="images/image.webp" alt="billy estella logo" height="30" width="30" loading="lazy"></a>
+        <h1>billy<span class="highlight">estella</span></h1>
+        <div id="menu-icon"><div></div></div>
+        <ul id="nav-list">
+            <a href="siteplan.html"><li>Home</li></a>
+            <a href="about.html"><li>About Me</li></a>
+            <a href="projects.html"><li>My Projects</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+        </ul>
+    </header>
+    <main>
+        <div class="slider-container">
+            <div class="slide">
+                <a href="https://www.vool.studio/" class="project-link" target="_blank">
+                    <h2 class="project heading">Vool Studio</h2>
+                </a>
+                <a href="https://www.vool.studio/" class="project-link" target="_blank">
+                    <img src="./images/vool.webp" alt="Vool Studio" width="200" height="150" loading="lazy">
+                </a>
+            </div>
+            <div class="slide"> 
+                <a href="https://bellandi.it/" class="project-link" target="_blank">
+                    <h2 class="project heading">Bellandi</h2>
+                </a>
+                <a href="https://bellandi.it/" class="project-link" target="_blank">
+                    <img src="./images/bellandi.webp" alt="Bellandi" width="200" height="150" loading="lazy">
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://www.the8s.com.au/" class="project-link" target="_blank">
+                    <h2 class="project heading">The Eights</h2>
+                </a>
+                <a href="https://www.the8s.com.au/" class="project-link" target="_blank">
+                    <img src="./images/the-eights.webp" alt="Bellandi" width="200" height="150" loading="lazy">
+                </a>
+            </div>
+        </div>
+        <div class="arrow-container">
+            <img src="./images/arrow-left.svg" alt="slider arrow" class="slider-arrow left" height="40" width="40">
+            <img src="./images/arrow-right.svg" alt="slider arrow" class="slider-arrow right" height="40" width="40">
+        </div>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><img src="./images/facebook.svg" loading="lazy" alt="facebook logo" height="25" width="25"></a>
+            <a href="https://instagram.com" target="_blank"><img src="./images/instagram.svg" loading="lazy"  alt="instagram logo" height="25" width="25"></a>
+            <a href="https://youtube.com" target="_blank"><img src="./images/youtube.svg" loading="lazy"  alt="youtube logo" height="25" width="25"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="./images/linkedin.svg" loading="lazy"  alt="linkedin logo" height="25" width="25"></a>
+            <a href="https://github.com" target="_blank"><img src="./images/github.svg" loading="lazy"  alt="github logo" height="25" width="25"></a>
+        </div>
+        <p>
+            <span>&#169;</span>
+            <span id="currentYear"></span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

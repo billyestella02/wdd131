@@ -1,0 +1,77 @@
+main {
+    height: 75vh;
+    width: 100vw;
+    position: relative;
+}
+
+.slider-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100vw);
+    height: 75vh;
+    align-items: center;
+    position: fixed;
+    left: 0vw;
+    transition: all 0.5s ease;
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    width: 100%;
+    padding: 0 2%;
+    position: absolute;
+    top: 42%;
+}
+
+.slider-arrow {
+    display: inline-block;
+}
+
+.left, .right {
+    transition: all 0.3s ease;
+}
+
+.left:hover, .right:hover {
+    opacity: 0.7;
+}
+
+.left {
+    visibility: hidden;
+}
+
+.right {
+    transform: rotate(180deg);
+}
+
+.slide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 1rem 15%;
+}
+
+.slide .heading {
+    font-family: 'Cutive Mono', 'Courier', monospace;
+    margin-bottom: 1rem;
+}
+
+.slide .about {
+    font-size: 2.5rem;
+}
+
+.slide .project {
+    font-size: 2rem;
+}
+
+.slide .project-link {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0.5rem 0;
+}
+
+
+

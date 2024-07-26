@@ -1,0 +1,9 @@
+@media screen and (min-width: 768px) {
+    .contact-form label {
+        padding-bottom: 1.5rem;
+    }
+
+    .contact-form input[type="submit"] {
+        margin-top: 1.5rem;
+    }
+}
